@@ -41,12 +41,17 @@
     "vite": "^5.3.3"
   },
   "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
     "@react-spring/three": "^9.7.3",
     "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-glow": "^0.1.18",
+    "@solana/wallet-adapter-phantom": "^0.9.24",
     "@solana/wallet-adapter-react": "^0.15.35",
     "@solana/wallet-adapter-react-ui": "^0.9.35",
     "@solana/wallet-adapter-wallets": "^0.19.32",
+    "@solana/wallet-standard": "^1.1.2",
     "@solana/web3.js": "^1.95.0",
+    "@wallet-standard/react": "^0.0.0-20240703212708",
     "dotenv": "^16.4.5",
     "leva": "^0.9.34",
     "react-scripts": "^5.0.1",
@@ -61,7 +66,7 @@
     "three": ">=0.153"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "env BROWSER=none vite",
     "build": "vite build && tsc",
     "preview": "vite preview"
   }
